@@ -35,7 +35,7 @@ const NavLogo = styled(LinkR)`
   padding: 0 6px;
   text-decoration: none;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   color: inherit;
   display: flex;
   align-items: center;
@@ -108,6 +108,28 @@ const GithubButton = styled.a`
   }
 `;
 
+const MobileMenu = styled.ul`
+display: flex;
+align-items: center;
+justify-content: center;
+list-style: none;
+flex-direction:column;
+align-items: start;
+gap: 16px;
+padding: 0;
+// gap: 32px;
+cursor:pointer;
+padding: 0 6px;
+width: 100%;
+background: ${({ theme }) => theme.card_light + 99};
+top: 64px;
+position: absolute;
+right: 0px;
+trasition: all 0.5s ease-in-out;
+transform: ${({ IsOpen }) => IsOpen ? 'translateX(0)' : 'translateX(-100)'};
+border-radius: 0 0 10px 10px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+`;
 
 const MobileIcon = styled.div`
 display: flex;
@@ -123,12 +145,12 @@ margin-top: 40px;
 ;
 
 const Navbar = () => {
-  const[IsOpen, setisOpen] = useState(false);
+  const[IsOpen, setIsOpen] = useState(false);
   return (
   <Nav>
   <NavbarContainer>
     <NavLogo to = "/" >Saket DB</NavLogo>
-    <MobileIcon onClick={() => setisOpen(!IsOpen)}>
+    <MobileIcon onClick={() => setIsOpen(!IsOpen)}>
       <MenuRounded style={{ color: "inherit"}} />
     </MobileIcon>
 
@@ -139,11 +161,25 @@ const Navbar = () => {
         <NavLink2 href = "">Experience</NavLink2>
         <NavLink2 href = "">Projects</NavLink2>
         <NavLink2 href = "">Education</NavLink2>
+        </NavItems>
+    {
+      IsOpen && (
+        <MobileMenu IsOpen = {IsOpen}>
+        <NavLink2 href = "">About</NavLink2>
+        <NavLink2 href = "">Skills</NavLink2>
+        <NavLink2 href = "">Experience</NavLink2>
+        <NavLink2 href = "">Projects</NavLink2>
+        <NavLink2 href = "">Education</NavLink2>
+        <GithubButton href = {Bio.github} target = "_blank">Github Profile</GithubButton>
+        </MobileMenu>
+        
+      )
+    }
         
     <ButtonContainer>
       <GithubButton href = {Bio.github} target = "_blank">Github Profile</GithubButton>
     </ButtonContainer>
-    </NavItems>
+    
     
     
     </NavbarContainer>

@@ -2,11 +2,12 @@ export const Bio = {
   name: "Saket Dwaraka Bhamidipaati",
   roles: [
     "Full Stack Developer",
-    "UI/UX Designer",
+    "Tech-Enthusiast",
     "Programmer",
+    "Founder",
   ],
   description:
-    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+    "I’m a creative thinker and problem-solver passionate about finding solutions that make a real difference. I’m the founder of 'AmpliTune,' and I’m here to create an impact and drive change. My work emphasizes efficiency, interactivity, and storytelling—whether through clean code, strategic branding, or empowering others through knowledge-sharing initiatives.Above all, I aim to combine my technical expertise and entrepreneurial spirit to develop solutions that tackle real-world challenges and leave a lasting impact.",
   github: "https://github.com/Saket-db",
   resume:
     "https://drive.google.com/file/d/1txFKZD3LNIXMc329jD9c995AU8LItOXK/view?usp=drive_link",
