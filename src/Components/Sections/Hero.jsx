@@ -72,7 +72,7 @@ const HeroLeftContainer = styled.div`
 
   @media (max-width: 960px) {
     order: 2;
-    margin-bottom: 55px;
+    margin-bottom: 35px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -90,7 +90,7 @@ const HeroLeftContainer = styled.div`
 const Title = styled.div`
   font-weight: 600;
   margin-top: 10px;
-  font-size: 37px;
+  font-size: 42px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 42px;
 
@@ -129,7 +129,7 @@ const Span = styled.div`
 const SubTitle = styled.div`
 // font-weight: 200;
 margin-top: 10px;
-font-size: 15px;
+font-size: 16px;
 margin-bottom: 13px;
 padding-right: 12px;
 // gap: 8px;
@@ -152,6 +152,7 @@ width: content;
 -moz-appearance: button;
 appearance: button;
 text-decoration: none;
+margin-top:10px;
 padding: 16px;
 align-items:center;
 font-weight:700;
@@ -166,7 +167,9 @@ color: ${({ theme }) => theme.text_primary};
 @media (max-width: 960px)
 {
 font-size: 14px;
+margin-top:12px;
 font-weight:600;
+
 };
 
 box-shadow: 2px 3px 15px;
@@ -193,9 +196,16 @@ const Img = styled.img`
   z-index: 3;
   position: relative;
 
+@media (max-width: 390px)
+{
+max-width: 250px;
+max-height: 100px;
+margin-left: 0px;
+};
+
 @media (max-width: 640px)
 {
-max-width: 200px;
+max-width: 250px;
 max-height: 200px;
 margin-left: 0px;
 };
