@@ -2,11 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import {Bio} from "../../data/constants.js";
 import Typewriter from "typewriter-effect";
-import HeroImg from "../../Images/HeroImg.jpeg";
+import IMG_3476 from "../../Images/IMG_3476.jpg";
 import HeroBgAn from "../HeroBgAnimation";
 import {Tilt} from "react-tilt";
 import {motion} from "framer-motion";
 import { headContainerAnimation, headTextAnimation} from '../../utils/motion.js';
+import StarCanvas from '../Canvas/Stars.jsx';
 
 
 const HeroContainer = styled.div`
@@ -184,6 +185,7 @@ filter: brightness(1);
 const Img = styled.img`
   border-radius: 50%;
   max-width: 350px;
+  max-height: 350px;
   width: 100%;
   height: auto;
   margin-left: 135px; 
@@ -225,9 +227,8 @@ const Hero = () => {
   return (
     <div id= "About">
       <HeroContainer>
-        
-      
         <HeroBg>
+          <StarCanvas />
           <HeroBgAn />
         </HeroBg>
         <motion.div {...headContainerAnimation}>
@@ -254,7 +255,7 @@ const Hero = () => {
             <HeroRightContainer>
             <motion.div {...headContainerAnimation}>
               <Tilt>
-                <Img src = {HeroImg} alt ="Saket" />
+                <Img src = {IMG_3476} alt ="Saket" />
               </Tilt>
               </motion.div>
               </HeroRightContainer>
