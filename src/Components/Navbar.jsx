@@ -20,8 +20,9 @@ const Nav = styled.div`
 const NavbarContainer = styled.div`
   background-color: ${({ theme }) => theme.bg};
   height: 65px;
-  padding: 0 24px;
+  padding: 0 10px;
   width: 100%;
+  // gap: 10px;
   max-width: 1200px;
   display: flex;
   align-items: center;
@@ -33,6 +34,8 @@ const NavLogo = styled(LinkR)`
   padding: 0 6px;
   text-decoration: none;
   font-size: 1.5rem;
+  gap: 32px;
+  margin-right: 15px;
   font-weight: 700;
    color: ${({ theme }) => theme.text_primary};
   display: flex;
@@ -50,7 +53,7 @@ const NavItems = styled.ul`
   align-items: center;
   justify-content: center;
   list-style: none;
-  gap: 32px;
+  gap: 45px;
   padding: 0;
   @media screen and (max-width: 768px) {
     display: none;
@@ -76,7 +79,7 @@ const NavLink2 = styled.a`
 const ButtonContainer = styled.div`
   width: full;
   height: 100%;
-  gap: 8px;
+  gap: 21px;
   display: flex;
   justify-content: end;
   align-items: center;

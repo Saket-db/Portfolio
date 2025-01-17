@@ -35,8 +35,8 @@ const HeroInnerContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  z-index: 2; /* Ensure it's above HeroBg */
-  position: relative; /* Create a stacking context */
+  z-index: 2; 
+  position: relative; 
 
   @media(max-width: 960px){
 flex-direction:column;
@@ -61,7 +61,7 @@ const HeroRightContainer = styled.div`
     order: 1;
     margin-bottom: 20px;
     display: flex;
-    align-items: center; // Fixed colon issue
+    align-items: center; 
     flex-direction: column;
   }
 `;
@@ -82,7 +82,7 @@ const HeroLeftContainer = styled.div`
     order: 2;
     margin-bottom: 20px;
     display: flex;
-    align-items: center; // Fixed colon issue
+    align-items: center; 
     flex-direction: column;
   }
 `;
@@ -127,14 +127,11 @@ const Span = styled.div`
 
 
 const SubTitle = styled.div`
-// font-weight: 200;
+
 margin-top: 10px;
 font-size: 16px;
 margin-bottom: 13px;
 padding-right: 12px;
-// gap: 8px;
-// align-items:center;
-// justify-content: center;
 text-align: justify;
   text-justify: inter-word;
     color: ${({ theme }) => theme.text_primary + 85};
@@ -163,24 +160,23 @@ background-color: ${({ theme }) => theme.primary};
 cursor:pointer;
 border-radius: 25px;
 color: ${({ theme }) => theme.text_primary};
+box-shadow: 2px 3px 15px;
+border-radius: 20px;
+font-size: 18px;
+font-weight: 600;
 
 @media (max-width: 960px)
 {
 font-size: 14px;
 margin-top:12px;
 font-weight:600;
-
 };
 
-box-shadow: 2px 3px 15px;
-border-radius: 20px;
-font-size: 18px;
-font-weight: 600;
-
-&: hover {
+&:hover {
+font-size: 17px;
 transfomr scale(1.1);
-transition: all 0.4s ease-in-out;
-box-shadow: 2px 3px 15px;
+transition: all 0.6s ease-in-out;
+box-shadow: 4px 6px 18px;
 filter: brightness(1);
 }
 `;
@@ -209,7 +205,6 @@ max-width: 250px;
 max-height: 200px;
 margin-left: 0px;
 };
-  // padding-left: 20px;
 `;
 
 const HeroBg = styled.div`

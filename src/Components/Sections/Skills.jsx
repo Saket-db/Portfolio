@@ -205,7 +205,7 @@ const Skills = () => {
         </Desc>
         <SkillContainer>
           {skills.map((skill, index) => (
-            <TiltWrapper key={`tilt-${index}`} options={{ max: 15, scale: 1, speed: 300 }}>
+            <TiltWrapper key={`tilt-${index}`} options={{ max: 25, scale: 1, speed: 300 }}>
               <Skill>
                 <SkillTitle onClick={() => toggleDropdown(index)}>{skill.title}</SkillTitle>
                 <SkillList isOpen={isMobile ? openIndexes[index] : true}>
