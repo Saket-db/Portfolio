@@ -73,10 +73,10 @@ const TiltWrapper = styled(Tilt)`
 
 const Skill = styled.div`
   width: 100%;
-  height: 100%; /* Ensures full height within Tilt wrapper */
+  height: 100%;
   border-radius: 16px;
   box-shadow: rgba(23, 93, 230, 0.15) 0px 4px 24px;
-  background-color: rgba(17, 25, 40, 0.83);
+  background-color: ${({ theme }) => theme.card + 'CC'}; /* Transparent theme-based background */
   padding: 15px 32px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -143,7 +143,7 @@ const SkillItem = styled.div`
   justify-content: center;
   align-items: center;
   gap: 6px;
-  background-color: ${({ theme }) => theme.background_secondary};
+  background-color: ${({ theme }) => theme.bgLight + 'CC'};
   transition: background-color 0.3s ease, transform 0.2s ease;
 
   &:hover {
@@ -207,9 +207,7 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <TiltWrapper key={`tilt-${index}`} options={{ max: 15, scale: 1, speed: 300 }}>
               <Skill>
-                <SkillTitle onClick={() => toggleDropdown(index)}>
-                  {skill.title}
-                </SkillTitle>
+                <SkillTitle onClick={() => toggleDropdown(index)}>{skill.title}</SkillTitle>
                 <SkillList isOpen={isMobile ? openIndexes[index] : true}>
                   {skill.skills.map((item, index_x) => (
                     <SkillItem key={`skill-item-${index_x}`}>

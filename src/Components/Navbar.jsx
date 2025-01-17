@@ -1,21 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import {Link as LinkR} from "react-router-dom";
-import {Bio} from "../data/constants.js";
-import {  MenuRounded } from "@mui/icons-material";
-import { useState } from 'react';
+import { Link as LinkR } from 'react-router-dom';
+import { Bio } from '../data/constants.js';
+import { MenuRounded } from '@mui/icons-material';
 
 const Nav = styled.div`
-background-color: ${({theme}) => theme.bg};
-height: 65px;
-align-items: center;
-justify-content: center;
-top: 0;
-position: sticky;
-display: flex;
-font-size:1 rem;
-z-index: 20;
-color: white;
+  background-color: ${({ theme }) => theme.bg};
+  height: 65px;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  position: sticky;
+  display: flex;
+  font-size: 1rem;
+  z-index: 20;
+  color: white;
 `;
 
 const NavbarContainer = styled.div`
@@ -30,13 +29,12 @@ const NavbarContainer = styled.div`
   font-size: 1rem;
 `;
 
-
 const NavLogo = styled(LinkR)`
   padding: 0 6px;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 700;
-  color: inherit;
+   color: ${({ theme }) => theme.text_primary};
   display: flex;
   align-items: center;
   transition: transform 0.7s ease, font-size 0.7s ease;
@@ -47,7 +45,6 @@ const NavLogo = styled(LinkR)`
   }
 `;
 
-
 const NavItems = styled.ul`
   display: flex;
   align-items: center;
@@ -55,40 +52,41 @@ const NavItems = styled.ul`
   list-style: none;
   gap: 32px;
   padding: 0;
-  // margin: 0;
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 
-
 const NavLink2 = styled.a`
-color ${({theme}) => theme.text_primary};
-font-weight:500;
-cursor: pointer;
-// display: flex;
-transition: all 0.4s ease-in-out;
-text-decoration: none;
-&:hover {
-color: ${({ theme })=> theme.primary}}; 
-`
-;
+  color: ${({ theme }) => theme.text_primary}; /* Bind to theme's text color */
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  padding: 12px 16px;
+  width: 100%;
+
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+    background-color: ${({ theme }) => theme.card_light};
+    border-radius: 5px;
+  }
+`;
 
 const ButtonContainer = styled.div`
-width: full;
-height: 100%;
-display: flex;
-justify-content:end;
-align-items: center;
-// flex-basis:50%;
-padding:0 6px;
-@media screen and (max-width:768px){
-display: none;
-}
-`
-;
+  width: full;
+  height: 100%;
+  gap: 8px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 4px 6px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
 
-const GithubButton = styled.a`
+const ToggleTheme = styled.button`
   border: 1px solid ${({ theme }) => theme.primary};
   display: flex;
   align-items: center;
@@ -100,7 +98,10 @@ const GithubButton = styled.a`
   text-decoration: none;
   font-weight: 500;
   color: ${({ theme }) => theme.primary};
+  background-color: transparent;
+  // margin-left: 14px;
   transition: all 0.4s ease-in-out;
+  width: content  ;
 
   &:hover {
     background-color: ${({ theme }) => theme.primary};
@@ -108,84 +109,113 @@ const GithubButton = styled.a`
   }
 `;
 
+const GithubButton = styled.a`
+  border: 1px solid ${({ theme }) => theme.primary};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 13px;
+  padding: 4px 10px;
+  width: content;
+  text-decoration: none;
+  font-weight: 500;
+  color: ${({ theme }) => theme.primary};
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.text_primary};
+  }
+`;
 const MobileMenu = styled.ul`
-display: flex;
-align-items: center;
-justify-content: center;
-list-style: none;
-flex-direction:column;
-align-items: start;
-gap: 16px;
-padding: 0;
-// gap: 32px;
-cursor:pointer;
-padding: 0 6px;
-width: 100%;
-background: ${({ theme }) => theme.card_light + 99};
-top: 64px;
-position: absolute;
-right: 0px;
-trasition: all 0.5s ease-in-out;
-transform: ${({ IsOpen }) => IsOpen ? 'translateX(0)' : 'translateX(-100)'};
-border-radius: 0 0 10px 10px;
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px; 
+  padding: 16px 24px; 
+  cursor: pointer;
+  width: 100%;
+  background: ${({ theme }) => theme.bg === "light" ? "rgba(255, 255, 255, 0.9)" : "rgba(0, 0, 0, 0.9)"}; /* Adjust background transparency */
+  top: 64px;
+  position: absolute;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+  transform: ${({ IsOpen }) => (IsOpen ? 'translateX(0)' : 'translateX(100%)')};
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
+  z-index: 10; 
+  
+  @media screen and (max-width: 768px) {
+    top: 70px;
+    width: 250px;
+    border-radius: 10px;
+    color: ${({ theme }) => theme.primary}; 
+
+  }
 `;
 
 const MobileIcon = styled.div`
-display: flex;
-align-items:center;
-height: 100%;
-display: none;
-color: ${({theme}) => theme.text_primary};
-@media screen and (max-width:768px){
-display: block;
-margin-top: 40px;
-}
-`
-;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  display: none;
+  color: ${({ theme }) => theme.text_primary};
+  margin-left: 16px;  
+  cursor: pointer;  
+  @media screen and (max-width: 768px) {
+    display: block;
+    margin-top: 30px; 
+    margin-right: 10px; 
+  }
+`;
 
-const Navbar = () => {
-  const[IsOpen, setIsOpen] = useState(false);
+const Navbar = ({ toggleTheme }) => {
+  const [IsOpen, setIsOpen] = useState(false);
   return (
-  <Nav>
-  <NavbarContainer>
-    <NavLogo to = "/" >Saket DB</NavLogo>
-    <MobileIcon onClick={() => setIsOpen(!IsOpen)}>
-      <MenuRounded style={{ color: "inherit"}} />
-    </MobileIcon>
+    <Nav>
+      <NavbarContainer>
+        <NavLogo to="/">Saket DB</NavLogo>
+        <MobileIcon onClick={() => setIsOpen(!IsOpen)}>
+          <MenuRounded style={{ color: 'inherit' }} />
+        </MobileIcon>
 
-    <NavItems>
-      
-        <NavLink2 href = "">About</NavLink2>
-        <NavLink2 href = "">Skills</NavLink2>
-        <NavLink2 href = "">Experience</NavLink2>
-        <NavLink2 href = "">Projects</NavLink2>
-        <NavLink2 href = "">Education</NavLink2>
+        <NavItems>
+          <NavLink2 href="">About</NavLink2>
+          <NavLink2 href="">Skills</NavLink2>
+          <NavLink2 href="">Experience</NavLink2>
+          <NavLink2 href="">Projects</NavLink2>
+          <NavLink2 href="">Education</NavLink2>
         </NavItems>
-    {
-      IsOpen && (
-        <MobileMenu IsOpen = {IsOpen}>
-        <NavLink2 href = "">About</NavLink2>
-        <NavLink2 href = "">Skills</NavLink2>
-        <NavLink2 href = "">Experience</NavLink2>
-        <NavLink2 href = "">Projects</NavLink2>
-        <NavLink2 href = "">Education</NavLink2>
-        <GithubButton href = {Bio.github} target = "_blank">Github Profile</GithubButton>
-        </MobileMenu>
-        
-      )
-    }
-        
-    <ButtonContainer>
-      <GithubButton href = {Bio.github} target = "_blank">Github Profile</GithubButton>
-    </ButtonContainer>
-    
-    
-    
-    </NavbarContainer>
-    </Nav>
 
-  )  
-}
+        {IsOpen && (
+          <MobileMenu IsOpen={IsOpen}>
+            <NavLink2 href="">About</NavLink2>
+            <NavLink2 href="">Skills</NavLink2>
+            <NavLink2 href="">Experience</NavLink2>
+            <NavLink2 href="">Projects</NavLink2>
+            <NavLink2 href="">Education</NavLink2>
+            <GithubButton href={Bio.github} target="_blank">
+              Github Profile
+            </GithubButton>
+            <ToggleTheme onClick={toggleTheme}>Switch Theme</ToggleTheme>
+          </MobileMenu>
+        )}
+
+        <ButtonContainer>
+          <GithubButton href={Bio.github} target="_blank">
+            Github Profile
+          </GithubButton>
+          <ToggleTheme onClick={toggleTheme}>Switch Theme</ToggleTheme>
+        </ButtonContainer>
+      </NavbarContainer>
+    </Nav>
+  );
+};
 
 export default Navbar;
