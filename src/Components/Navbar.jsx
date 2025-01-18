@@ -190,11 +190,11 @@ const Navbar = ({ toggleTheme }) => {
         </MobileIcon>
 
         <NavItems>
-          <NavLink2 href="Hero.jsx">About</NavLink2>
-          <NavLink2 href="Skills.jsx">Skills</NavLink2>
-          <NavLink2 href="Experience.jsx">Experience</NavLink2>
-          <NavLink2 href="">Projects</NavLink2>
-          <NavLink2 href="">Education</NavLink2>
+          <NavLink2 href="#Hero">About</NavLink2>
+          <NavLink2 href="#Skills">Skills</NavLink2>
+          <NavLink2 href="#Experience">Experience</NavLink2>
+          <NavLink2 href="#Projects">Projects</NavLink2>
+          <NavLink2 href="#Education">Education</NavLink2>
         </NavItems>
 
         {IsOpen && (
