@@ -143,7 +143,8 @@ const MobileMenu = styled.ul`
   padding: 16px 24px; 
   cursor: pointer;
   width: 100%;
-  background: ${({ theme }) => theme.bg === "light" ? "rgba(255, 255, 255, 0.9)" : "rgba(0, 0, 0, 0.9)" }; 
+  // background: ${({ theme }) => theme.bg === "light" ? "rgba(255, 255, 255, 0.9)" : "rgba(0, 0, 0, 0.9)" }; 
+   background-color: ${({ theme }) => theme.card + 'CC'};
   top: 64px;
   position: absolute;
   right: 0;
@@ -189,9 +190,9 @@ const Navbar = ({ toggleTheme }) => {
         </MobileIcon>
 
         <NavItems>
-          <NavLink2 href="">About</NavLink2>
-          <NavLink2 href="">Skills</NavLink2>
-          <NavLink2 href="">Experience</NavLink2>
+          <NavLink2 href="Hero.jsx">About</NavLink2>
+          <NavLink2 href="Skills.jsx">Skills</NavLink2>
+          <NavLink2 href="Experience.jsx">Experience</NavLink2>
           <NavLink2 href="">Projects</NavLink2>
           <NavLink2 href="">Education</NavLink2>
         </NavItems>

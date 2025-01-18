@@ -88,7 +88,7 @@ const Experience = () => {
          <Desc>
           My Work Experience
         </Desc>
-        <VerticalTimeline>
+        <VerticalTimeline >
           {/* <TiltWrapper options={{ max: 5, scale: 1, speed: 30 }}> */}
           {experiences.map((experience, index) =>(
             <Cards key = {`experience - ${index}`}

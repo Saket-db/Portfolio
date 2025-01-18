@@ -1,10 +1,8 @@
-// import { Description } from '@mui/icons-material';
-import React from 'react';
+import React, { useState } from 'react';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
-import styled from "styled-components";
-// import Skills from '../Sections/Skills';
+import styled, { useTheme } from 'styled-components';
 
-
+// Styled Components
 const Image = styled.img`
   border-radius: 12px;
   height: 70px;
@@ -13,9 +11,9 @@ const Image = styled.img`
 
   @media only screen and (max-width: 768px) {
     height: 50px;
-    width: 50px;  /* Ensures the image size is consistent */
-    border-radius: 50%; /* Make it circular */
-    margin-top: 0;  /* Remove extra margin for mobile view */
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 0;
   }
 `;
 
@@ -25,20 +23,21 @@ const Top = styled.div`
   max-width: 100%;
   gap: 8px;
   border-radius: 12px;
-  align-items: center;  /* Center align items for mobile */
+  align-items: center;
 
   @media only screen and (max-width: 768px) {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center;    /* Center align items */
+    flex-direction: column;
+    align-items: center;
   }
 `;
+
 const Body = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
 
   @media only screen and (max-width: 768px) {
-    align-items: center;  /* Center align content */
+    align-items: center;
   }
 `;
 
@@ -48,30 +47,16 @@ const Skill = styled.div`
   color: ${({ theme }) => theme.text_primary + 97};
 
   @media only screen and (max-width: 768px) {
-    font-size: 13px; 
-    padding-left: 10px;  
-  }
-`;
-
-const Role = styled.div`
-  font-size: 15px;
-  font-weight: 600;
-  margin-bottom: 3px;
-  color: ${({ theme }) => theme.text_primary + 97};
-
-  @media only screen and (max-width: 768px) {
     font-size: 13px;
-    text-align: center;  /* Center text on mobile */
+    padding-left: 10px;
   }
 `;
+
 const IW = styled.div`
-display: flex;
-flex-wrap: wrap;
-gap: 6px;
-// margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 `;
-
-
 
 const DDescription = styled.div`
   width: 100%;
@@ -82,35 +67,26 @@ const DDescription = styled.div`
 
   @media only screen and (max-width: 768px) {
     font-size: 12px;
-   
-    margin-top: 5px;  /* Add space between description and skills */
+    margin-top: 5px;
   }
 `;
 
-
-const Span = styled.div`
-display: -webkit-box;
-max-width: 100%;
-`;
-
-
 const SSkills = styled.div`
-width: 100%;
-display: flex;
-flex-wrap: wrap;
-gap: 12px;
-margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
 `;
 
 const Date = styled.div`
   font-size: 13px;
   font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 85};
+  color: ${({ theme }) => theme.text_secondary + 85};
 
   @media only screen and (max-width: 768px) {
-    font-size: 11px;  /* Adjust font size for mobile */
-    display: block;    /* Ensure date is visible in mobile view */
-    text-align: center;  /* Center align the date */
+    font-size: 11px;
+    text-align: center;
   }
 `;
 
@@ -122,44 +98,66 @@ const Company = styled.div`
 
   @media only screen and (max-width: 768px) {
     font-size: 12px;
-    text-align: center;  /* Center align company name */
+    text-align: center;
   }
 `;
 
+const Cards = ({ experience }) => {
+  const theme = useTheme();
+  const [isHovered, setIsHovered] = useState(false);
 
-const Cards = ({experience}) => {
   return (
     <VerticalTimelineElement
-    icon={<img 
-    width= "100%" height="100%" alt = {experience.company} style={{borderRadius: "50%",  border: "2px solid"}} src={experience.img} />}
-    
-    contentStyle={{display : "flex", flexDirection:"column", gap:"12px", background:"#1d1836", color:"#fff",borderRadius: "4px", border: "1px solid rgba(255,255,255,0.125)"}}
-    
-    contentArrowStyle = {{borderRight: "7px solid rgba(255, 255, 255, 0.3)", }}
-    date={experience.date}
+      icon={
+        <img
+          width="100%"
+          height="100%"
+          alt={experience.company}
+          style={{ borderRadius: "50%", border: "2px solid" }}
+          src={experience.img}
+        />
+      }
+      contentStyle={{
+        display: "flex",
+        flexDirection: "column",
+        background: theme.name === "light" ? "#000" : `${theme.card}CC`,
+        color: "#fff",
+        borderRadius: "4px",
+        border: theme.name === "light" ? "1px solid rgba(12, 12, 12, 0.84)" : "1px solid rgba(234, 228, 228, 0.86)",
+        boxShadow: isHovered
+          ? "0px 10px 30px rgba(236, 236, 236, 0.8)"
+          : "0px 4px 8px rgba(15, 15, 15, 0.72)",
+        transform: isHovered ? "translateY(-8px)" : "translateY(0)",
+        transition: "all 0.5s ease-in-out",
+      }}
+      contentArrowStyle={{
+        borderRight: theme.name === "light" ? "7px solid #000" : "7px solid rgba(88, 88, 88, 0.46)",
+      }}
+      date={experience.date}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
-        <Top>
-            <Image src ={experience.img} />
-            <Body>
-                <Role>{experience.role}</Role>
-                <Company>{experience.company}</Company>
-                <Date>{experience.date}</Date>
-            </Body>
-            </Top>
-            <DDescription>
-                <Span>{experience.desc}</Span>
-                <SSkills><b>Skills</b>
-                <IW>
-                {experience.skills.map((skill,index) =>(
-                    <Skill>• {skill}</Skill>
-                ))}
-                </IW>
-                </SSkills>
-            </DDescription>
-        
-      
+      <Top>
+        <Image src={experience.img} />
+        <Body>
+          <div style={{ fontWeight: "600", marginBottom: "3px" }}>{experience.role}</div>
+          <Company>{experience.company}</Company>
+          <Date>{experience.date}</Date>
+        </Body>
+      </Top>
+      <DDescription>
+        <div>{experience.desc}</div>
+        <SSkills>
+          <b>Skills</b>
+          <IW>
+            {experience.skills.map((skill, index) => (
+              <Skill key={index}>• {skill}</Skill>
+            ))}
+          </IW>
+        </SSkills>
+      </DDescription>
     </VerticalTimelineElement>
-  )
-}
+  );
+};
 
-export default Cards
+export default Cards;

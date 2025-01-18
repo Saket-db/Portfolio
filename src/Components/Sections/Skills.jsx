@@ -76,7 +76,7 @@ const Skill = styled.div`
   height: 100%;
   border-radius: 16px;
   box-shadow: rgba(23, 93, 230, 0.15) 0px 4px 24px;
-  background-color: ${({ theme }) => theme.card + 'CC'}; /* Transparent theme-based background */
+  background-color: ${({ theme }) => theme.card + 'CC'}; 
   padding: 15px 32px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
