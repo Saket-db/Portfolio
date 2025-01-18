@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {Bio} from "../../data/constants.js";
 import Typewriter from "typewriter-effect";
-import IMG_3476 from "../../Images/IMG_3476.jpg";
+// import IMG_3476 from "../../Images/IMG_3476.jpg";
 import HeroBgAn from "../HeroBgAnimation";
 import {Tilt} from "react-tilt";
 import {motion} from "framer-motion";
@@ -260,7 +260,7 @@ const Hero = () => {
             <HeroRightContainer>
             <motion.div {...headContainerAnimation}>
               <Tilt>
-                <Img src = {IMG_3476} alt ="Saket" />
+                <Img src = "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737182207/ebfqq6nd9rskhvlthbel.jpg" alt ="Saket" />
               </Tilt>
               </motion.div>
               </HeroRightContainer>
