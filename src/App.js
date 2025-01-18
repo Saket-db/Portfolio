@@ -30,7 +30,7 @@ function App() {
         <Body>
           <Hero />
           <Skills />
-          <Experience />
+          <Experience toggleTheme={toggleTheme} />
         </Body>
       </BrowserRouter>
     </ThemeProvider>

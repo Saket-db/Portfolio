@@ -143,7 +143,7 @@ const MobileMenu = styled.ul`
   padding: 16px 24px; 
   cursor: pointer;
   width: 100%;
-  background: ${({ theme }) => theme.bg === "light" ? "rgba(255, 255, 255, 0.9)" : "rgba(0, 0, 0, 0.9)"}; /* Adjust background transparency */
+  background: ${({ theme }) => theme.bg === "light" ? "rgba(255, 255, 255, 0.9)" : "rgba(0, 0, 0, 0.9)" }; 
   top: 64px;
   position: absolute;
   right: 0;
@@ -152,13 +152,13 @@ const MobileMenu = styled.ul`
   border-radius: 10px 0 0 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
   z-index: 10; 
+  color: white;
   
   @media screen and (max-width: 768px) {
     top: 70px;
     width: 250px;
     border-radius: 10px;
-    color: ${({ theme }) => theme.primary}; 
-
+    color: white;
   }
 `;
 

@@ -7,14 +7,18 @@ import Cards from '../Cards/Cards';
 import "react-vertical-timeline-component/style.min.css";
 // import {Tilt} from "react-tilt";
 
-const CContainer = styled.div`  // Renamed the styled Container to StyledContainer
+const CContainer = styled.div` 
   display: flex;
   justify-content: space-evenly;
   z-index: 1;
-  // margin-top:30px;
   position: relative;
   flex-direction: row;
   align-items: center;
+
+  @media (max-width: 960px) {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    gap: 20px; /* Add spacing between items */
+  }
 `;
 
 const Wrapper = styled.div`
@@ -23,11 +27,11 @@ const Wrapper = styled.div`
   width: 100%;
   flex-direction: column;
   max-width: 1100px;
-  gap: 10px;
+  gap: 20px; /* Increased gap for better spacing */
   align-items: center;
 
   @media (max-width: 960px) {
-    flex-direction: column;
+    padding: 0 20px; /* Add horizontal padding for mobile view */
   }
 `;
 
@@ -39,22 +43,30 @@ const Title = styled.div`
   color: ${({ theme }) => theme.text_primary};
 
   @media (max-width: 760px) {
-    margin-top: 8px;
-    font-size: 30px;
+    margin-top: 20px; /* Reduce margin for better spacing */
+    font-size: 28px; /* Adjust font size for smaller screens */
     font-weight: 500;
+    line-height: 1.4; /* Improve readability */
   }
 `;
 
 const Desc = styled.div`
   font-size: 16px;
-  padding: 0px 0px 0px;
+  padding: 0px 20px; /* Add padding for better alignment on mobile */
   text-align: center;
   color: ${({ theme }) => theme.text_secondary + 95};
+
+  @media (max-width: 760px) {
+    font-size: 14px; /* Slightly reduce font size for smaller screens */
+    line-height: 1.5; /* Improve readability */
+    padding: 0 15px; /* Add more padding for better alignment */
+  }
 `;
 
+
 // const TiltWrapper = styled(Tilt)`
-//   width: calc(50% - 20px);
-//   max-width: 500px;
+//   // width: calc(50% - 20px);
+//   // max-width: 500px;
 
 //   @media (max-width: 760px) {
 //     width: 100%;
@@ -72,19 +84,19 @@ const Experience = () => {
   return (
     <CContainer id="Education">  
       <Wrapper>
-        <Title>Experience</Title> {/* Fixed typo here (xperience -> Experience) */}
-        <Desc>
+        <Title>Experience</Title> 
+         <Desc>
           My Work Experience
         </Desc>
-        {/* <TiltWrapper key={`tilt-${index}`} options={{ max: 25, scale: 1, speed: 300 }}> */}
         <VerticalTimeline>
+          {/* <TiltWrapper options={{ max: 5, scale: 1, speed: 30 }}> */}
           {experiences.map((experience, index) =>(
             <Cards key = {`experience - ${index}`}
             experience = {experience}
             />
           ))}
+          {/* </TiltWrapper> */}
         </VerticalTimeline>
-        {/* </TiltWrapper> */}
       </Wrapper>
     </CContainer>
   );
