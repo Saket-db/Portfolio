@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar';
 import Hero from './Components/Sections/Hero';
 import Skills from './Components/Sections/Skills';
 import Experience from './Components/Sections/Experience';
+import Education from './Components/Sections/Education';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -31,6 +32,7 @@ function App() {
           <Hero />
           <Skills />
           <Experience toggleTheme={toggleTheme} />
+          <Education />
         </Body>
       </BrowserRouter>
     </ThemeProvider>
