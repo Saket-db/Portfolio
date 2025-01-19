@@ -53,9 +53,9 @@ function App() {
           <Skills />
           <Experience toggleTheme={toggleTheme} />
           </Wrapper>
-          <Wrapper>
+          
           <Projects />
-          </Wrapper>
+          
           <Wrapper>
           <Education />
           </Wrapper>

@@ -43,23 +43,23 @@ const Title = styled.div`
   color: ${({ theme }) => theme.text_primary};
 
   @media (max-width: 760px) {
-    margin-top: 20px; /* Reduce margin for better spacing */
-    font-size: 28px; /* Adjust font size for smaller screens */
+    margin-top: 20px; 
+    font-size: 28px; 
     font-weight: 500;
-    line-height: 1.4; /* Improve readability */
+    line-height: 1.4; 
   }
 `;
 
 const Desc = styled.div`
   font-size: 16px;
-  padding: 0px 20px; /* Add padding for better alignment on mobile */
+  padding: 0px 20px; 
   text-align: center;
   color: ${({ theme }) => theme.text_secondary + 95};
 
   @media (max-width: 760px) {
-    font-size: 14px; /* Slightly reduce font size for smaller screens */
-    line-height: 1.5; /* Improve readability */
-    padding: 0 15px; /* Add more padding for better alignment */
+    font-size: 14px; 
+    line-height: 1.5;
+    padding: 0 15px; 
   }
 `;
 
@@ -92,8 +92,8 @@ const Education = () => {
           {education.map((item, index) => (
             <EduCards
               key={`education-${index}`}
-              education={item} // Change `education` prop to `experience` to match Cards component.
-            />
+              education={item} 
+                          />
           ))}
           {/* </TiltWrapper> */}
         </VerticalTimeline>

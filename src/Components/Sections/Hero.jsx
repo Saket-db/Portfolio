@@ -192,6 +192,14 @@ const Img = styled.img`
   z-index: 3;
   position: relative;
 
+@media (max-width:960px)
+{
+margin-left:0px;
+width: 450px;
+max-height: 370px;
+
+}
+
 @media (max-width: 390px)
 {
 max-width: 250px;
@@ -201,8 +209,8 @@ margin-left: 0px;
 
 @media (max-width: 640px)
 {
-max-width: 250px;
-max-height: 200px;
+width: 130px;
+max-height: 120px;
 margin-left: 0px;
 };
 `;
@@ -221,9 +229,16 @@ justify-content: end;
 transform: translateX(-50%) translateY(-50%);
 z-index: 0;
 
-@media (max-width: 640px)
+
+@media (max-width:960px){
+left:39%;
+top:43%
+}
+
+@media (max-width: 760px)
 {
-top: 42%;
+left: 48%;
+top: 43%;
 }
 
 `;

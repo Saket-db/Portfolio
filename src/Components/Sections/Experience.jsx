@@ -12,6 +12,7 @@ const CContainer = styled.div`
   justify-content: space-evenly;
   z-index: 1;
   position: relative;
+  mwrgin-top: 40px;
   flex-direction: row;
   align-items: center;
 
@@ -44,7 +45,7 @@ const Title = styled.div`
 
   @media (max-width: 760px) {
     margin-top: 20px; /* Reduce margin for better spacing */
-    font-size: 28px; /* Adjust font size for smaller screens */
+    font-size: 25px; /* Adjust font size for smaller screens */
     font-weight: 500;
     line-height: 1.4; /* Improve readability */
   }
