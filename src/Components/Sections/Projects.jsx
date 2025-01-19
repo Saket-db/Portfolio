@@ -43,10 +43,10 @@ const Title = styled.div`
   color: ${({ theme }) => theme.text_primary};
 
   @media (max-width: 760px) {
-    margin-top: 20px; /* Reduce margin for better spacing */
-    font-size: 28px; /* Adjust font size for smaller screens */
+    margin-top: 20px; 
+    font-size: 28px; 
     font-weight: 500;
-    line-height: 1.4; /* Improve readability */
+    line-height: 1.4; 
   }
 `;
 

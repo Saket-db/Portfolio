@@ -112,6 +112,7 @@ const Cards = ({ experience }) => {
         <img
           width="100%"
           height="100%"
+          // border= "3px solid black"
           alt={experience.company}
           style={{ borderRadius: "50%", border: "2px solid" }}
           src={experience.img}
@@ -123,11 +124,12 @@ const Cards = ({ experience }) => {
         background: theme.name === "light" ? "#000" : `${theme.card}CC`,
         color: "#fff",
         borderRadius: "4px",
-        border: theme.name === "light" ? "1px solid rgba(12, 12, 12, 0.84)" : "1px solid rgba(234, 228, 228, 0.86)",
+        // border: theme.name === "light" ? "1px solid rgba(12, 12, 12, 0.84)" : "1px solid rgba(234, 228, 228, 0.86)",
+        border: "4px solid",
         boxShadow: isHovered
           ? "0px 10px 30px rgba(236, 236, 236, 0.8)"
           : "0px 4px 8px rgba(15, 15, 15, 0.72)",
-        transform: isHovered ? "translateY(-8px)" : "translateY(0)",
+        transform: isHovered ? "translateY(8px)" : "translateY(0)",
         transition: "all 0.5s ease-in-out",
       }}
       contentArrowStyle={{
