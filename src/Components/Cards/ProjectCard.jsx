@@ -17,8 +17,8 @@ import React from 'react'
 // `;
 
 const Card = styled.div`
-  width: 100%; /* Let the card take full width within the grid column */
-  max-width: 330px; /* Constrain card size */
+  width: 100%; 
+  max-width: 330px; 
   height: 440px;
   cursor: pointer;
   background-color: ${({ theme }) => theme.card + 'CC'};
@@ -37,10 +37,11 @@ const Card = styled.div`
     transform: translate(-10px);
     box-shadow: rgba(23, 93, 230, 0.35) 0px 18px 14px;
     filter: brightness(1.1);
+    // overflow: visible;
   }
 
   @media screen and (max-width: 768px) {
-    max-width: 100%; /* Adjust to fit the container on small screens */
+    max-width: 100%; 
     height: 400px;
     padding: 8px;
     font-size: 12px;
@@ -117,7 +118,9 @@ const Description = styled.div`
   max-width: 100%;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
+  // text-overflow: ellipsis;
+
+
 `;
 const Members = styled.div`
   display: flex;

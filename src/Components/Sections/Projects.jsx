@@ -12,6 +12,7 @@ const Container = styled.div`
   position: relative;
   mwrgin-top: 40px;
   flex-direction: row;
+  // flex-wrap:nowrap;
   padding: 0 16px;
   align-items: center;
 
@@ -110,7 +111,7 @@ display: flex;
 align-items:center;
 justify-content: center;
 gap: 22px;
-flex-wrap: wrap;
+// flex-wrap: nowrap;
 `;
 
 const Projects = () => {
@@ -129,6 +130,8 @@ const Projects = () => {
         </TtoggleButtonGroup>
         <CardContainer>
           {toggle === "all" && projects.map((project) => <ProjectCard project ={project} />)}
+          {projects
+          .filter((item) => item.category === toggle).map((project) => <ProjectCard project ={project} />)}
         </CardContainer>
 
       </Wrapper>

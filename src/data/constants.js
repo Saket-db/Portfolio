@@ -279,7 +279,7 @@ export const projects = [
       
     ],
     category: "web app",
-    github: "https://github.com/rishavchanda/Project-Management-App",
+    github: "https://github.com/Saket-db/E-Commerce",
     webapp: "https://e-commerce-lrmk7gyls-saket-dwaraka-bhamidipaatis-projects.vercel.app/",
   },
   
