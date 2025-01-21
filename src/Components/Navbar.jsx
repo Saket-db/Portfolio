@@ -192,8 +192,8 @@ const Navbar = ({ toggleTheme }) => {
         <NavItems>
           <NavLink2 href="#About">About</NavLink2>
           <NavLink2 href="#Skills">Skills</NavLink2>
-          <NavLink2 href="#Experience">Experience</NavLink2>
-          <NavLink2 href="#Projects">Projects</NavLink2>
+          <NavLink2 href="#Education">Experience</NavLink2>
+          <NavLink2 href="#Project">Projects</NavLink2>
           <NavLink2 href="#Educ">Education</NavLink2>
         </NavItems>
 
@@ -201,8 +201,8 @@ const Navbar = ({ toggleTheme }) => {
           <MobileMenu IsOpen={IsOpen}>
             <NavLink2 href="#About">About</NavLink2>
             <NavLink2 href="#Skills">Skills</NavLink2>
-            <NavLink2 href="#Experience">Experience</NavLink2>
-            <NavLink2 href="#Projects">Projects</NavLink2>
+            <NavLink2 href="Education">Experience</NavLink2>
+            <NavLink2 href="#Project">Projects</NavLink2>
             <NavLink2 href="#Educ">Education</NavLink2>
             <GithubButton href={Bio.github} target="_blank">
               Github Profile

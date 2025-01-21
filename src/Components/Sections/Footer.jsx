@@ -88,8 +88,8 @@ const Footer = () => {
         <Nav>
           <NavLink href="#About">About</NavLink>
           <NavLink href="#Skills">Skills</NavLink>
-          <NavLink href="#Experienc">Experience</NavLink>
-          <NavLink href="#Projects">Projects</NavLink>
+          <NavLink href="#Education">Experience</NavLink>
+          <NavLink href="#Project">Projects</NavLink>
           <NavLink href="#Educ">Education</NavLink>
         </Nav>
         <SocialMediaIcons>

@@ -101,6 +101,7 @@ const ContactButton = styled.input`
   padding: 13px 16px;
   margin-top: 2px;
   border-radius: 12px;
+  cursor: pointer;
   border: none;
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
@@ -135,6 +136,7 @@ const Contact = () => {
         <Desc
           style={{
             marginBottom: "40px",
+            padding: "0px 15px"
           }}
         >
           Feel free to reach out to me for any questions or opportunities!
