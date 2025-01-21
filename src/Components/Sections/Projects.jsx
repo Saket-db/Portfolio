@@ -12,7 +12,7 @@ const Container = styled.div`
   position: relative;
   margin-top: 40px;
   // flex-direction: row;
-  flex-wrap:nowrap;
+  // flex-wrap:nowrap;
   padding: 0 16px;
   // overflow:scroll;
   align-items: center;
@@ -110,9 +110,17 @@ background: ${({theme}) => theme.primary};
 const CardContainer = styled.div`
 display: flex;
 align-items:center;
+flex-direction: row;
 justify-content: center;
+
 gap: 22px;
 // flex-wrap: nowrap;
+
+@media screen and (max-width: 768px) {
+flex-direction: column;
+overflow: hidden;
+
+}
 `;
 
 const Projects = () => {
