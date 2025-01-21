@@ -10,10 +10,11 @@ const Container = styled.div`
   justify-content: space-evenly;
   z-index: 1;
   position: relative;
-  mwrgin-top: 40px;
-  flex-direction: row;
-  // flex-wrap:nowrap;
+  margin-top: 40px;
+  // flex-direction: row;
+  flex-wrap:nowrap;
   padding: 0 16px;
+  // overflow:scroll;
   align-items: center;
 
   @media (max-width: 960px) {
