@@ -106,7 +106,7 @@ const Footer = () => {
             <Instagram />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2025 Saket DB. All rights reserved.</Copyright>
+        <Copyright>&copy; 2025 <a href="https://saket-db-portfolio.vercel.app/" target = "blank">Saket DB.</a> All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );
