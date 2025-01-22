@@ -135,7 +135,7 @@
             <Image src={education.img} />
             <Body>
             <School>{education?.school}</School>
-            {/* <Degree>{education.degree}</Degree> */}
+            <Degree>{education.degree}</Degree>
             <Date>{education.date}</Date>
             </Body>
         </Top>
