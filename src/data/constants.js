@@ -7,7 +7,7 @@ export const Bio = {
     "Founder",
   ],
   description:
-    "I’m a creative thinker and problem-solver passionate about finding solutions that make a real difference. I’m the founder of 'AmpliTune,' and I’m here to create an impact and drive change. My work emphasizes efficiency, interactivity, and storytelling—whether through clean code, strategic branding, or empowering others through knowledge-sharing initiatives. Above all, I aim to combine my technical expertise and entrepreneurial spirit to develop solutions that tackle real-world challenges and leave a lasting impact.",
+    "I’m a creative thinker and problem-solver, passionate about finding solutions that make a real difference. As the founder of 'AmpliTune,' I strive to create impact and drive change. My work focuses on efficiency, interactivity, and storytelling—whether through clean code, strategic branding, or empowering others through knowledge-sharing initiatives. Above all, I aim to combine my technical expertise and entrepreneurial spirit to develop solutions that address real-world challenges and leave a lasting impact.",
   github: "https://github.com/Saket-db",
   resume:
     "https://drive.google.com/file/d/1tUIf2xAcweI_XPABvfMKkX13SaQQbVE8/view?usp=drive_link",
@@ -118,7 +118,7 @@ export const experiences = [
     role: "Director of Marketing",
     company: "Entrepreneurship Cell, VIT, Vellore",
     date: "Jan 2025 - Present",
-    desc: "• Led a team of Marketing Executives to craft content for multiple social media platforms, building a community of like-minded individuals and successfully promoting entrepreneurship across the campus.",
+    desc: "• Leading a team of Marketing Executives to create content for multiple social media platforms, build a community of like-minded individuals, and successfully promote entrepreneurship across the campus.",
     skills: [
 
       // "Conternt Strategy",
@@ -173,7 +173,7 @@ export const education = [
     school: "Vellore Institute of Technology, Vellore",
     date: "Jul 2022 - Present",
     grade: "8.50 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at VIT, Vellore. I have taken courses in Data Structures & Algorithms, Object-Oriented Programming, Operating Systems, and Computer Networks, among others. I am also a Board of Director at Entrepreneurship Cell (E-Cell) at VIT, Vellore, where I am leading team of Marketing Executives, crafting and devising strategies to promote the spririt of entrepreneurship among students.",
+    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at VIT, Vellore. I have taken courses in Data Structures & Algorithms, Object-Oriented Programming, Operating Systems, and Computer Networks, among others. I am also a member of Board of Director at Entrepreneurship Cell (E-Cell) at VIT, Vellore, where I am leading team of Marketing Executives, crafting and devising strategies to promote the spririt of entrepreneurship among students.",
     degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
   },
   {
