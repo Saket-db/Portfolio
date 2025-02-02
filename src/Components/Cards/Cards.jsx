@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import styled, { useTheme } from 'styled-components';
+import { lightTheme,darkTheme } from '../../utils/Themes';
 
 // Styled Components
 const Image = styled.img`
@@ -102,6 +103,12 @@ const Company = styled.div`
   }
 `;
 
+const Experience = styled.div`
+  font-weight: 600;
+  margin-bottom: 3px;
+  color: ${({ theme }) => (theme.name==="dark" ? "rgb(255,255,255)":"rgb(0,0,0)")};
+`;
+
 const Cards = ({ experience }) => {
   const theme = useTheme();
   const [isHovered, setIsHovered] = useState(false);
@@ -121,8 +128,8 @@ const Cards = ({ experience }) => {
       contentStyle={{
         display: "flex",
         flexDirection: "column",
-        background: theme.name === "light" ? "#000" : `${theme.card}CC`,
-        color: "#fff",
+        background: theme.name === "dark" ? "rgb(0,0,0)" : "rgb(255,255,255)",
+        color: theme.name === "light" ? "rgb(0,0,0)" : "rgb(255,255,255)",
         borderRadius: "4px",
         // border: theme.name === "light" ? "1px solid rgba(12, 12, 12, 0.84)" : "1px solid rgba(234, 228, 228, 0.86)",
         border: "4px solid",
@@ -142,7 +149,7 @@ const Cards = ({ experience }) => {
       <Top>
         <Image src={experience.img} />
         <Body>
-          <div style={{ fontWeight: "600", marginBottom: "3px" }}>{experience.role}</div>
+          <Experience>{experience.role}</Experience>
           <Company>{experience.company}</Company>
           <Date>{experience.date}</Date>
         </Body>

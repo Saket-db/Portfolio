@@ -114,8 +114,8 @@
         contentStyle={{
             display: "flex",
             flexDirection: "column",
-            background: theme.name === "light" ? "#000" : `${theme.card}CC`,
-            color: "#fff",
+            background: theme.name === "dark" ? "rgb(0,0,0)" : "rgb(255,255,255)",
+            color: theme.name === "light" ? "rgb(0,0,0)" : "rgb(255,255,255)",
             borderRadius: "4px",
             border: theme.name === "light" ? "1px solid rgba(12, 12, 12, 0.84)" : "1px solid rgba(234, 228, 228, 0.86)",
             boxShadow: isHovered
