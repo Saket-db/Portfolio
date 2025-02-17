@@ -64,22 +64,6 @@ const Desc = styled.div`
 `;
 
 
-// const TiltWrapper = styled(Tilt)`
-//   // width: calc(50% - 20px);
-//   // max-width: 500px;
-
-//   @media (max-width: 760px) {
-//     width: 100%;
-//     max-width: 400px;
-//   }
-
-//   @media (max-width: 500px) {
-//     width: 100%;
-//     max-width: 310px;
-//   }
-// `;
-
-
 const Education = () => {
   return (
     <CContainer id="Educ">  

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import styled, { useTheme } from 'styled-components';
-import { lightTheme,darkTheme } from '../../utils/Themes';
+// import { lightTheme,darkTheme } from '../../utils/Themes';
 
 // Styled Components
 const Image = styled.img`
@@ -130,7 +130,7 @@ const Cards = ({ experience }) => {
         flexDirection: "column",
         background: theme.name === "dark" ? "rgb(0,0,0)" : "rgb(255,255,255)",
         color: theme.name === "light" ? "rgb(0,0,0)" : "rgb(255,255,255)",
-        borderRadius: "4px",
+        borderRadius: "2px",
         // border: theme.name === "light" ? "1px solid rgba(12, 12, 12, 0.84)" : "1px solid rgba(234, 228, 228, 0.86)",
         border: "4px solid",
         boxShadow: isHovered
