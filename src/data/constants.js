@@ -10,7 +10,7 @@ export const Bio = {
     "I’m a creative thinker and problem-solver, passionate about finding solutions that make a real difference. As the founder of 'AmpliTune,' I strive to create impact and drive change. My work focuses on efficiency, interactivity, and storytelling—whether through clean code, strategic branding, or empowering others through knowledge-sharing initiatives. Above all, I aim to combine my technical expertise and entrepreneurial spirit to develop solutions that address real-world challenges and leave a lasting impact.",
   github: "https://github.com/Saket-db",
   resume:
-    "https://drive.google.com/file/d/1x6ua_20MmuKvv6sg_C9ELCbRl31wYQzg/view?usp=sharing",
+    "https://drive.google.com/file/d/1BTlDO3yuxU2a7xiqLE2xdqigpakhtQ1x/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/saket-dwaraka-bhamidipaati/",
   twitter: "https://x.com/Saket_db",
   insta: "https://www.instagram.com/saket_db/",
