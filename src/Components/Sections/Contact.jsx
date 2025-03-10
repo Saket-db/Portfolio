@@ -1,13 +1,11 @@
 import React, { useRef } from "react";
 import styled from "styled-components";
-import emailjs from "@emailjs/browser";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-contnet: center;
-
-  position: rlative;
+  justify-content: center;
+  position: relative;
   z-index: 1;
   align-items: center;
 `;
@@ -20,7 +18,6 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1100px;
-  
   gap: 12px;
   @media (max-width: 960px) {
     flex-direction: column;
@@ -51,9 +48,8 @@ const ContactForm = styled.div`
   width: 95%;
   max-width: 600px;
   display: flex;
-    background-color: ${({ theme }) => theme.card + 'CC'};
+  background-color: ${({ theme }) => theme.card + 'CC'};
   flex-direction: column;
-//   background-color: rgba(17, 25, 40, 0.83);
   border: 1px solid rgba(255, 255, 255, 0.125);
   padding: 32px;
   border-radius: 12px;
@@ -110,43 +106,39 @@ const ContactButton = styled.input`
 
 const Contact = () => {
   const form = useRef();
-  const handelSubmit = (e) => {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_tox7kqs",
-        "template_nv7k7mj",
-        form.current,
-        "SybVGsYS52j2TfLbi"
-      )
-      .then(
-        (result) => {
-          alert("Message Sent");
-          form.current.result();
-        },
-        (error) => {
-          alert(error);
-        }
-      );
+    const formData = new FormData(form.current);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch("http://localhost:5000/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      const result = await response.json();
+      alert(result.message || "Message Sent Successfully!");
+      form.current.reset();
+    } catch (error) {
+      alert("Error sending message. Please try again later.");
+    }
   };
+
   return (
     <Container id="Education">
       <Wrapper>
         <Title>Contact</Title>
-        <Desc
-          style={{
-            marginBottom: "40px",
-            padding: "0px 15px"
-          }}
-        >
+        <Desc style={{ marginBottom: "40px", padding: "0px 15px" }}>
           Feel free to reach out to me for any questions or opportunities!
         </Desc>
-        <ContactForm onSubmit={handelSubmit}>
+        <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me </ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" name="message" rows={4} />
+          <ContactInput placeholder="Your Email" name="from_email" required />
+          <ContactInput placeholder="Your Name" name="from_name" required />
+          <ContactInput placeholder="Subject" name="subject" required />
+          <ContactInputMessage placeholder="Message" name="message" rows={4} required />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
       </Wrapper>
