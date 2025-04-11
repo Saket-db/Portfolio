@@ -42,7 +42,9 @@ const Title = styled.div`
 
 const Desc = styled.div`
   font-size: 16px;
-  padding: 0px 0px 0px;
+  // padding: 0px 0px 0px;
+  // padding-left: 12px;
+  //   padding-right: 12px;
   text-align: center;
   color: ${({ theme }) => theme.text_secondary + 95};
 `;
@@ -200,7 +202,7 @@ const Skills = () => {
     <Container id="Skills">
       <Wrapper>
         <Title>Skills</Title>
-        <Desc style={{ marginBottom: '20px' }}>
+        <Desc style={{ marginBottom: '20px', padding: '5px' }}>
           I am a Front-End Developer with a certification as a MongoDB Associate Developer.
         </Desc>
         <SkillContainer>

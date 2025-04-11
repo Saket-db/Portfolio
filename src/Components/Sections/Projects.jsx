@@ -45,8 +45,8 @@ const Title = styled.div`
   color: ${({ theme }) => theme.text_primary};
 
   @media (max-width: 760px) {
-    margin-top: 20px; 
-    font-size: 28px; 
+    margin-top: 10px; 
+    font-size: 30px; 
     font-weight: 500;
     line-height: 1.4; 
   }

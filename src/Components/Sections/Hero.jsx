@@ -128,18 +128,21 @@ const Span = styled.div`
 
 const SubTitle = styled.div`
 
-margin-top: 10px;
+margin-top: 20px;
 font-size: 16px;
 margin-bottom: 13px;
 padding-right: 12px;
+// padding-left:12px;
 text-align: justify;
   text-justify: inter-word;
     color: ${({ theme }) => theme.text_primary + 85};
 
   @media (max-width: 960px) {
 font-size: 17px;
-padding: 0 0 0px;
+// padding: 0 10 0px;
+padding-left: 12px;
 line-height:20px;
+margin-bottom: 25px;  
 }
 `;
 
@@ -187,32 +190,28 @@ const Img = styled.img`
   max-height: 350px;
   width: 100%;
   height: auto;
-  margin-left: 135px; 
-  border: 2px solid ${({ theme}) => theme.text_primary};
+  margin-left: 135px;
+  border: 2px solid ${({ theme }) => theme.text_primary};
   z-index: 3;
   position: relative;
 
-@media (max-width:960px)
-{
-margin-left:0px;
-width: 450px;
-max-height: 370px;
+  @media (max-width: 960px) {
+    margin-left: 0px;
+    width: 450px;
+    max-height: 370px;
+  }
 
-}
+  @media (max-width: 640px) {
+    width: 200px;
+    max-height: 200px;
+    margin-left: 0px;
+  }
 
-@media (max-width: 390px)
-{
-max-width: 250px;
-max-height: 100px;
-margin-left: 0px;
-};
-
-@media (max-width: 640px)
-{
-width: 130px;
-max-height: 120px;
-margin-left: 0px;
-};
+  @media (max-width: 390px) {
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: 0px;
+  }
 `;
 
 const HeroBg = styled.div`

@@ -45,7 +45,7 @@ const Title = styled.div`
 
   @media (max-width: 760px) {
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
     line-height: 1.4; 
   }
@@ -58,7 +58,7 @@ const Desc = styled.div`
   color: ${({ theme }) => theme.text_secondary + 95};
 
   @media (max-width: 760px) {
-    font-size: 14px; 
+    font-size: 16px; 
     line-height: 1.5; 
     padding: 0 15px; 
   }
