@@ -116,7 +116,7 @@ export const experiences = [
     img: "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737192926/Group_2_rgwmmj.jpg",
     role: "Director of Marketing",
     company: "Entrepreneurship Cell, VIT, Vellore",
-    date: "Jan 2025 - Present",
+    date: "Jul 2024 - Present",
     desc: "• Leading a team of Marketing Executives to create content for multiple social media platforms, build a community of like-minded individuals, and successfully promote entrepreneurship across the campus.",
     skills: [
 
@@ -147,22 +147,22 @@ export const experiences = [
     ],
     // doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1696514649120.jpeg?alt=media&token=e7f6757b-edfa-4138-a692-d6709eeef3e2",
   },
-  {
-    id: 2,
-    img: "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737192926/Group_2_rgwmmj.jpg",
-    role: "Core Committee Member",
-    company: "Entrepreneurship Cell, VIT, Vellore",
-    date: "Jan 2023 - Dec 2024",
-    desc: "• Crafted and curated content for various social media platforms. Designed marketing campaigns and strategies that attracted over 8,000 students to flagship events.",
-    skills: [
-      "Marketing Strategy",
-      "Market Research",
-      "Social Media Marketing",
-      "Content Creation",
-      "Documentation",
-    ],
-  //  doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
-  },
+  // {
+  //   id: 2,
+  //   img: "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737192926/Group_2_rgwmmj.jpg",
+  //   role: "Core Committee Member",
+  //   company: "Entrepreneurship Cell, VIT, Vellore",
+  //   date: "Jan 2023 - Dec 2024",
+  //   desc: "• Crafted and curated content for various social media platforms. Designed marketing campaigns and strategies that attracted over 8,000 students to flagship events.",
+  //   skills: [
+  //     "Marketing Strategy",
+  //     "Market Research",
+  //     "Social Media Marketing",
+  //     "Content Creation",
+  //     "Documentation",
+  //   ],
+  // //  doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
+  // },
 ];
 
 export const education = [

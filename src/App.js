@@ -16,8 +16,7 @@ const Body = styled.div`
   color: ${({ theme }) => theme.text_primary};
   width: 100%;
   position: relative;
-  overflow-x: hidden;
-  height: 100vh;
+  min-height: 100vh;
 `;
 
 const Wrapper = styled.div`
