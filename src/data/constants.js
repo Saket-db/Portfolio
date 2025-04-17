@@ -9,7 +9,7 @@ export const Bio = {
   description:
     "I’m a CSE undergrad and a versatile explorer passionate about working at the intersection of technology, business, and everything in between. From diving into market research to building brands, I thrive on tackling challenges with an out-of-the-box approach. I specialize in front-end development, focusing on crafting seamless user experiences with HTML, CSS, and JavaScript, along with frameworks like React. I am also proficient in using libraries such as Framer Motion, 3JS, and Bootstrap, enabling me to build interactive and visually engaging applications.",
   github: "https://github.com/Saket-db",
-  resume:"https://drive.google.com/file/d/1Mw0MJr1rBQ2m94JrOdzwqNyiv-TBFytY/view?usp=sharing",
+  resume:"https://drive.google.com/file/d/14kB0_t5J9EN3AknYO_3T80y6bjepRUxQ/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/saket-dwaraka-bhamidipaati/",
   twitter: "https://x.com/Saket_db",
   insta: "https://www.instagram.com/saket_db/",
