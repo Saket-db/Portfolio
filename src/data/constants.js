@@ -117,7 +117,7 @@ export const experiences = [
     role: "Director of Marketing",
     company: "Entrepreneurship Cell, VIT, Vellore",
     date: "Jul 2024 - Present",
-    desc: "• Leading a team of Marketing Executives to create content for multiple social media platforms, build a community of like-minded individuals, and successfully promote entrepreneurship across the campus.",
+    desc: "Leading a team of Marketing Executives to create content for multiple social media platforms, build a community of like-minded individuals, and successfully promote entrepreneurship across the campus.",
     skills: [
 
       // "Conternt Strategy",
@@ -137,7 +137,7 @@ export const experiences = [
     role: "Business Development intern",
     company: "Valsco Technology Private Limited",
     date: "Aug 2023 - Oct 2023",
-    desc: "• Created an Investor Pitch Deck for the project 'Jurident'. Played a key role in developing Jurident's business model and conducted research on grants and schemes offered by the government.",
+    desc: "Created an Investor Pitch Deck for the project 'Jurident'. Played a key role in developing Jurident's business model and conducted research on grants and schemes offered by the government.",
     skills: [
       "Market Research",
       "Business Development",
