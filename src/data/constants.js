@@ -196,8 +196,27 @@ export const education = [
 ];
 
 export const projects = [
+
   {
     id: 9,
+    title: "Chaitfy",
+    date: "Feb-Apr-2025",
+    description:
+      "Developed a real-time chat application called Chatify using MERN stack and Socket.IO. Implemented features like instant messaging, online user tracking, and a responsive UI for seamless user experience.",
+    image:
+      "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1745353004/Chatify_Portifolio_sjsyze.png",
+    tags: [
+     "MongoDB",
+     "React",
+     "Express",
+     "Node",
+    ],
+    category: "web app",
+    github: "hhttps://github.com/Saket-db/Chatting_App",
+    // webapp: "",
+  },
+  {
+    id: 11,
     title: "Muffled Music",
     date: "Aug 2024 - Sep 2024",
     description:
@@ -213,23 +232,26 @@ export const projects = [
     github: "https://github.com/Saket-db/Headphones",
     webapp: "https://headphones-pied.vercel.app/",
   },
+
   {
-    id: 11,
-    title: "Helpbot",
-    date: "Oct 2024",
+    id: 1,
+    title: "E-Commerce Website",
+    date: "April 2024",
     description:
-      "Created a responsive chatbot using Vanilla JS, enabling users to ask questions and receive instant responses. Integrated OpenAI's API to power the chatbot's functionality.",
+      "Cloned a popular e-commerce website using the Vanilla JS framework. Implemented user authentication with JavaScript and added enhanced functionalities for an improved user experience.",
     image:
-      "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737319140/Helpbot_wo7mwh.png",
+      "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737321630/ECommerce_v1pnvy.png",
     tags: [
-     "HTML",
-     "CSS",
-     "Javascript",
+      "HTML",
+      "CSS",
+      "Javascript",
+      
     ],
     category: "web app",
-    github: "https://github.com/Saket-db/Chatbot",
-    webapp: "hhttps://saket-db.github.io/Chatbot/",
+    github: "https://github.com/Saket-db/E-Commerce",
+    webapp: "https://e-commerce-lrmk7gyls-saket-dwaraka-bhamidipaatis-projects.vercel.app/",
   },
+
   {
     id: 0,
     title: "Tune Trail",
@@ -263,24 +285,7 @@ export const projects = [
       },
     ],
   },
-  {
-    id: 1,
-    title: "E-Commerce Website",
-    date: "April 2024",
-    description:
-      "Cloned a popular e-commerce website using the Vanilla JS framework. Implemented user authentication with JavaScript and added enhanced functionalities for an improved user experience.",
-    image:
-      "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737321630/ECommerce_v1pnvy.png",
-    tags: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      
-    ],
-    category: "web app",
-    github: "https://github.com/Saket-db/E-Commerce",
-    webapp: "https://e-commerce-lrmk7gyls-saket-dwaraka-bhamidipaatis-projects.vercel.app/",
-  },
+
   
 ];
 
