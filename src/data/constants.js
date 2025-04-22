@@ -200,7 +200,7 @@ export const projects = [
   {
     id: 9,
     title: "Chaitfy",
-    date: "Feb-Apr-2025",
+    date: "Feb 2025 - Apr 2025",
     description:
       "Developed a real-time chat application called Chatify using MERN stack and Socket.IO. Implemented features like instant messaging, online user tracking, and a responsive UI for seamless user experience.",
     image:
@@ -214,6 +214,25 @@ export const projects = [
     category: "web app",
     github: "hhttps://github.com/Saket-db/Chatting_App",
     // webapp: "",
+  },
+  {
+    id: 1,
+    title: "Book Heaven",
+    date: "Mar 2025",
+    description:
+      "Cloned a popular e-commerce websiEngineered Book Heaven, a full-stack book e-commerce platform using the MERN stack, boosting page load speed by 40% through efficient REST API design and MongoDB indexing.te using the Vanilla JS framework. Implemented user authentication with JavaScript and added enhanced functionalities for an improved user experience.",
+    image:
+      "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1745354068/BookHeaven_wknbbz.png",
+    tags: [
+      "MongoDB",
+      "Express",
+      "React",
+      "Node",
+      
+    ],
+    category: "web app",
+    github: "https://github.com/Saket-db/Book-Heaven",
+    // webapp: "https://e-commerce-lrmk7gyls-saket-dwaraka-bhamidipaatis-projects.vercel.app/",
   },
   {
     id: 11,
@@ -233,24 +252,6 @@ export const projects = [
     webapp: "https://headphones-pied.vercel.app/",
   },
 
-  {
-    id: 1,
-    title: "E-Commerce Website",
-    date: "April 2024",
-    description:
-      "Cloned a popular e-commerce website using the Vanilla JS framework. Implemented user authentication with JavaScript and added enhanced functionalities for an improved user experience.",
-    image:
-      "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737321630/ECommerce_v1pnvy.png",
-    tags: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      
-    ],
-    category: "web app",
-    github: "https://github.com/Saket-db/E-Commerce",
-    webapp: "https://e-commerce-lrmk7gyls-saket-dwaraka-bhamidipaatis-projects.vercel.app/",
-  },
 
   {
     id: 0,
@@ -263,7 +264,7 @@ export const projects = [
     tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Bootstrap CSS"],
     category: "web app",
     github: "https://github.com/Saket-db/TuneTrail",
-    //webapp: "https://podstream.netlify.app/",
+
     member: [
       {
         name: "Saket Dwaraka Bhamidipaati",
@@ -275,13 +276,13 @@ export const projects = [
         name: "Jaiaditya Mathur",
         img: "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737320399/Jai_Image_zveo5t.jpg",
         linkedin: "https://www.linkedin.com/in/jaiaditya-mathur/  ",
-        github: "hhttps://github.com/jai-mathur05",
+        github: "https://github.com/jai-mathur05",
       },
       {
         name: "Riya Autade",
         img: "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737320647/Riya_Autade_yyqqyo.jpg",
         linkedin: "https://www.linkedin.com/in/riya-autade-889b20250/",
-        // github: "https://github.com/upasana0710",
+
       },
     ],
   },
