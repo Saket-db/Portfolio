@@ -220,7 +220,7 @@ export const projects = [
     title: "Book Heaven",
     date: "Mar 2025",
     description:
-      "Cloned a popular e-commerce websiEngineered Book Heaven, a full-stack book e-commerce platform using the MERN stack, boosting page load speed by 40% through efficient REST API design and MongoDB indexing.te using the Vanilla JS framework. Implemented user authentication with JavaScript and added enhanced functionalities for an improved user experience.",
+      "Engineered Book Heaven, a full-stack book e-commerce platform using the MERN stack, boosting page load speed by 40% through efficient REST API design and MongoDB indexing.te using the Vanilla JS framework. Implemented user authentication with JavaScript and added enhanced functionalities for an improved user experience.",
     image:
       "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1745354068/BookHeaven_wknbbz.png",
     tags: [
