@@ -4,7 +4,7 @@ export const Bio = {
     "Full Stack Developer",
     "Tech-Enthusiast",
     "Programmer",
-    "Founder",
+    "Problem-Solver",
   ],
   description:
     "I’m a CSE undergrad and a versatile explorer passionate about working at the intersection of technology, business, and everything in between. From diving into market research to building brands, I thrive on tackling challenges with an out-of-the-box approach. I specialize in front-end development, focusing on crafting seamless user experiences with HTML, CSS, and JavaScript, along with frameworks like React. I am also proficient in using libraries such as Framer Motion, 3JS, and Bootstrap, enabling me to build interactive and visually engaging applications.",
@@ -20,18 +20,30 @@ export const skills = [
     title: "Frontend",
     skills: [
       {
+  name: "Next.js",
+  image: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
+},
+{
+  name: "Vue.js",
+  image: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
+},
+      {
+  name: "Nuxt.js",
+  image: "https://nuxt.com/assets/design-kit/logo/icon-green.png",
+},
+      {
         name: "React Js",
         image:
           "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
       },
-      
+
       
       {
-        name: "HTML",
+        name: "HTML5",
         image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
       },
       {
-        name: "CSS",
+        name: "CSS 3",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
       },
@@ -40,6 +52,11 @@ export const skills = [
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
       },
+            {
+  name: "Tailwind CSS",
+  image: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+},
+
       {
         name: "Bootstrap",
         image:
@@ -66,6 +83,19 @@ export const skills = [
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
       },
+      {
+  name: "Django",
+  image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain-wordmark.svg",
+},
+      {
+  name: "Stripe",
+  image: "https://upload.wikimedia.org/wikipedia/commons/1/12/Stripe_logo%2C_revised_2016.svg",
+},
+
+{
+  name: "Supabase",
+  image: "https://supabase.io/new-branding/supabase-logo-wordmark--dark.svg",
+},
       
     ],
   },

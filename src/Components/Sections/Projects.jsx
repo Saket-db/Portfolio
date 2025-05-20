@@ -130,13 +130,7 @@ const Projects = () => {
       <Wrapper>
         <Title>Projects</Title>
         <Desc>I have worked on a wide range of projects and mastered multiple tech stacks, including the MERN stack, Vanilla JS, and more. Here are a few of my projects:</Desc>
-        <TtoggleButtonGroup>
-          <ToggleButton active={toggle==="all"}
-          onClick={() => setToggle("all")}>All</ToggleButton>
-          <Divider />
-<ToggleButton active={toggle==="web app"}
-          onClick={() => setToggle("web app")}>WEB APP's</ToggleButton>
-        </TtoggleButtonGroup>
+        
         <CardContainer>
           {toggle === "all" && projects.map((project) => <ProjectCard project ={project} />)}
           {projects
