@@ -309,23 +309,23 @@ export const projects = [
     github: "https://github.com/Saket-db/Book-Heaven",
     // webapp: "https://e-commerce-lrmk7gyls-saket-dwaraka-bhamidipaatis-projects.vercel.app/",
   },
-  {
-    id: 11,
-    title: "Muffled Music",
-    date: "Aug 2024 - Sep 2024",
-    description:
-      "Built and deployed a responsive, animated headphone e-commerce website. Integrated WhatsApp API for easy user-developer communication and used Framer Motion for animations with React for the frontend.",
-    image:
-      "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737317937/Muffled_Music_kis9yj.png",
-    tags: [
-      "React Js",
-      "Tailwind CSS",
-      "Framer Motion",
-    ],
-    category: "web app",
-    github: "https://github.com/Saket-db/Headphones",
-    webapp: "https://headphones-pied.vercel.app/",
-  },
+  // {
+  //   id: 11,
+  //   title: "Muffled Music",
+  //   date: "Aug 2024 - Sep 2024",
+  //   description:
+  //     "Built and deployed a responsive, animated headphone e-commerce website. Integrated WhatsApp API for easy user-developer communication and used Framer Motion for animations with React for the frontend.",
+  //   image:
+  //     "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737317937/Muffled_Music_kis9yj.png",
+  //   tags: [
+  //     "React Js",
+  //     "Tailwind CSS",
+  //     "Framer Motion",
+  //   ],
+  //   category: "web app",
+  //   github: "https://github.com/Saket-db/Headphones",
+  //   webapp: "https://headphones-pied.vercel.app/",
+  // },
 
 
   // {
