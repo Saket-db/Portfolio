@@ -85,9 +85,9 @@ const Experience = () => {
   return (
     <CContainer id="Education">  
       <Wrapper>
-        <Title>Experience</Title> 
+        <Title>Experience & Extracurriculars</Title> 
          <Desc>
-          My Work Experience
+          My experience and extracurriculars are a mix of academic and professional endeavors that have helped me develop
         </Desc>
         <VerticalTimeline >
           {/* <TiltWrapper options={{ max: 5, scale: 1, speed: 30 }}> */}

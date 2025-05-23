@@ -87,6 +87,12 @@ export const skills = [
   name: "Django",
   image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain-wordmark.svg",
 },
+
+{
+  name: "Firebase",
+  image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+},
+
       {
   name: "Stripe",
   image: "https://upload.wikimedia.org/wikipedia/commons/1/12/Stripe_logo%2C_revised_2016.svg",
@@ -142,12 +148,33 @@ export const skills = [
 
 export const experiences = [
   {
+    id: 21,
+    img: "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1748031971/piexxitechnology_logo_acejpq.jpg",
+    role: "Web Development Intern",
+    company: "Piexxi Technology LLP",
+    date: "May 2025 - Present",
+    desc: "Working on the latest project 'Adceleration', contributing to the development and maintenance of responsive user interfaces using Next.js and Tailwind CSS. Playing a key role in streamlining UI components and improving overall design consistency.",
+    skills: [
+
+      // "Conternt Strategy",
+      "Next.js",
+      "Tailwind CSS",
+      "Firebase",
+      // "Content Development",
+      // "Public Relations",
+      // "CSS",
+      // "JavaScript",
+    ],
+    // doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
+  },
+
+  {
     id: 0,
     img: "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737192926/Group_2_rgwmmj.jpg",
     role: "Director of Marketing",
     company: "Entrepreneurship Cell, VIT, Vellore",
-    date: "Jul 2024 - Present",
-    desc: "Leading a team of Marketing Executives to create content for multiple social media platforms, build a community of like-minded individuals, and successfully promote entrepreneurship across the campus.",
+    date: "Jul 2024 - Jun 2025",
+    desc: "Led a team of 15+ Marketing Executives to create content for multiple social media platforms, build a community of like-minded individuals, and successfully promote entrepreneurship across the campus, collectively attracting over 7,000 students to flagship events such as E-Summit'25 and FuturePreneurs 10.0.",
     skills: [
 
       // "Conternt Strategy",
@@ -227,6 +254,24 @@ export const education = [
 
 export const projects = [
 
+    {
+    id: 20,
+    title: "SnapCart",
+    date: "May 2025 - Jun 2025",
+    description:
+      "SnapCart is a modern cross-border online marketplace that empowers retailers to seamlessly buy and sell products across regions. Built using Vue 3, Nuxt, and Tailwind CSS, the platform focuses on performance, responsiveness, and user experience.",
+    image:
+      "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1748030627/SnapCarrt_uxcvid.png",
+    tags: [
+      "Vue 3",
+      "Nuxt",
+      "Tailwind",
+      "Django",
+    ],
+    category: "web app",
+    github: "https://github.com/Saket-db/SnapCart",
+    // webapp: "https://headphones-pied.vercel.app/",
+  },
   {
     id: 9,
     title: "Chaitfy",
@@ -283,39 +328,39 @@ export const projects = [
   },
 
 
-  {
-    id: 0,
-    title: "Tune Trail",
-    date: "Jun 2024 - Jul 2024",
-    description:
-      "Developed a full-stack web application that allows users to search for, play, and pause their favorite songs on demand. Made a responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
-    image:
-      "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737321251/TuneTrail_n0uica.png",
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Bootstrap CSS"],
-    category: "web app",
-    github: "https://github.com/Saket-db/TuneTrail",
+  // {
+  //   id: 0,
+  //   title: "Tune Trail",
+  //   date: "Jun 2024 - Jul 2024",
+  //   description:
+  //     "Developed a full-stack web application that allows users to search for, play, and pause their favorite songs on demand. Made a responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
+  //   image:
+  //     "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737321251/TuneTrail_n0uica.png",
+  //   tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Bootstrap CSS"],
+  //   category: "web app",
+  //   github: "https://github.com/Saket-db/TuneTrail",
 
-    member: [
-      {
-        name: "Saket Dwaraka Bhamidipaati",
-        img: "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737182207/ebfqq6nd9rskhvlthbel.jpg",
-        linkedin: "https://www.linkedin.com/in/saket-dwaraka-bhamidipaati/",
-        github: "https://github.com/Saket-db",
-      },
-      {
-        name: "Jaiaditya Mathur",
-        img: "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737320399/Jai_Image_zveo5t.jpg",
-        linkedin: "https://www.linkedin.com/in/jaiaditya-mathur/  ",
-        github: "https://github.com/jai-mathur05",
-      },
-      {
-        name: "Riya Autade",
-        img: "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737320647/Riya_Autade_yyqqyo.jpg",
-        linkedin: "https://www.linkedin.com/in/riya-autade-889b20250/",
+  //   member: [
+  //     {
+  //       name: "Saket Dwaraka Bhamidipaati",
+  //       img: "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737182207/ebfqq6nd9rskhvlthbel.jpg",
+  //       linkedin: "https://www.linkedin.com/in/saket-dwaraka-bhamidipaati/",
+  //       github: "https://github.com/Saket-db",
+  //     },
+  //     {
+  //       name: "Jaiaditya Mathur",
+  //       img: "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737320399/Jai_Image_zveo5t.jpg",
+  //       linkedin: "https://www.linkedin.com/in/jaiaditya-mathur/  ",
+  //       github: "https://github.com/jai-mathur05",
+  //     },
+  //     {
+  //       name: "Riya Autade",
+  //       img: "https://res.cloudinary.com/dyy1u7wvc/image/upload/v1737320647/Riya_Autade_yyqqyo.jpg",
+  //       linkedin: "https://www.linkedin.com/in/riya-autade-889b20250/",
 
-      },
-    ],
-  },
+  //     },
+  //   ],
+  // },
 
   
 ];
